@@ -167,8 +167,9 @@ export default function VideoTestimonialSection({
 
   return (
     <section className="relative w-full bg-white overflow-hidden">
-      <div className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-orange-200/45 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-28 -right-24 h-80 w-80 rounded-full bg-orange-300/35 blur-3xl" />
+      {/* ✅ orange -> blue */}
+      <div className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-sky-200/45 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-28 -right-24 h-80 w-80 rounded-full bg-sky-300/35 blur-3xl" />
 
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
@@ -177,21 +178,17 @@ export default function VideoTestimonialSection({
 
         {/* ✅ Real horizontal scroll + scrollbar visible + auto rolling */}
         <div className="mt-10">
-          <div className="rounded-[26px] border border-gray-200 bg-gradient-to-b from-orange-50/70 via-white to-white shadow-[0_18px_55px_rgba(0,0,0,0.10)]">
+          {/* ✅ orange -> blue gradient */}
+          <div className="rounded-[26px] border border-gray-200 bg-gradient-to-b from-sky-50/80 via-white to-white shadow-[0_18px_55px_rgba(0,0,0,0.10)]">
             <VideoScrollRow
               items={items}
-              autoPxPerSec={22} // ✅ lower = slower auto rolling
+              autoPxPerSec={22} // lower = slower auto rolling
               setVideoRef={setVideoRef}
               onVolumeChange={handleVolumeChange}
               onPlay={handlePlay}
               onFullscreen={openFullscreen}
             />
           </div>
-
-          <p className="mt-3 text-xs sm:text-sm text-gray-500 text-center">
-            Use the scrollbar below to move left/right. Auto-roll pauses while you interact.
-            Mobile: tap video to open fullscreen.
-          </p>
         </div>
       </div>
     </section>
@@ -294,7 +291,7 @@ function VideoScrollRow({
                     ref={setVideoRef(it.id)}
                     onVolumeChange={() => onVolumeChange(it.id)}
                     onPlay={() => onPlay(it.id)}
-                    onClick={() => onFullscreen(it.id)} // ✅ mobile tap fullscreen
+                    onClick={() => onFullscreen(it.id)} // mobile tap fullscreen
                     src={it.src}
                     className="h-full w-full object-cover"
                     autoPlay
