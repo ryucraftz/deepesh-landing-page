@@ -75,19 +75,19 @@ export default function MeetCoachKush() {
                   <div className="grid grid-cols-2 gap-2 rounded-2xl bg-black/60 backdrop-blur border border-white/15 p-3 shadow-sm text-left">
                     <MiniStatOverlay
                       icon={<Users className="h-4 w-4" />}
-                      label="400+ Transformations"
+                      label="1200+ Transformations"
                     />
                     <MiniStatOverlay
                       icon={<Timer className="h-4 w-4" />}
-                      label="4+ Years Coaching"
+                      label="8+ Years Coaching"
                     />
                     <MiniStatOverlay
                       icon={<Target className="h-4 w-4" />}
-                      label="Busy Adults Focus"
+                      label="Specialised in coaching Busy dads and parents"
                     />
                     <MiniStatOverlay
                       icon={<Globe2 className="h-4 w-4" />}
-                      label="Multiple Countries"
+                      label="Clients across 8+ countries"
                     />
                   </div>
                 </div>
@@ -103,25 +103,34 @@ export default function MeetCoachKush() {
                   The story
                 </p>
 
+                {/* ✅ UPDATED STORY (short + relevant, Fit Dad angle) */}
                 <div className="mt-3 space-y-3 text-gray-800 leading-relaxed">
                   <p>
-                    I wasn’t always confident, lean, or consistent. Like most people,
-                    I tried random diets, extreme rules, and unsustainable routines — and failed.
+                    In the corporate world, I kept seeing the same pattern — most people
+                    over 30 (especially parents) were struggling with weight, even after
+                    trying diets, workouts, and trainers.
                   </p>
 
                   <p>
-                    Over years of learning, experimenting, and coaching real people, I realized one truth:
+                    The problem wasn’t knowledge. It was life: long hours, kids, travel,
+                    stress — and{" "}
                     <span className="font-semibold text-black">
-                      {" "}
-                      Fitness only works when it fits real life.
+                      no structure or daily accountability.
                     </span>
                   </p>
 
                   <p>
-                    That’s when I built a system focused on{" "}
-                    <span className="font-semibold text-black">sustainability</span>,{" "}
-                    <span className="font-semibold text-black">quantified nutrition</span>, and{" "}
-                    <span className="font-semibold text-black">lifestyle alignment</span>.
+                    That’s why I built the{" "}
+                    <span className="font-semibold text-black">Fit Dad Program</span> —
+                    simple nutrition, short realistic workouts, and daily check-ins that
+                    keep busy dads consistent even on bad days.
+                  </p>
+
+                  <p>
+                    Because when structure + accountability are in place,{" "}
+                    <span className="font-semibold text-black">
+                      results stop being accidental — they become inevitable.
+                    </span>
                   </p>
                 </div>
               </div>
@@ -138,10 +147,10 @@ export default function MeetCoachKush() {
 
                 <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <Bullet>ISSA Certified Fitness Coach &amp; Nutritionist</Bullet>
-                  <Bullet>4+ years of online coaching experience</Bullet>
-                  <Bullet>400+ successful client transformations</Bullet>
-                  <Bullet>Specialized in fat loss for parents &amp; busy adults</Bullet>
-                  <Bullet>Clients coached across multiple countries</Bullet>
+                  <Bullet>8+ years of online coaching experience</Bullet>
+                  <Bullet>1200+ successful client transformations</Bullet>
+                  <Bullet>Specialised in coaching Busy dads &amp; parents</Bullet>
+                  <Bullet>Clients across 8+ countries</Bullet>
                 </ul>
               </div>
 
