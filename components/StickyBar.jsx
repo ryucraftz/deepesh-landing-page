@@ -8,6 +8,11 @@ const StickyBar = () => {
   const handlePayment = () => {
     if (!isLoaded) return;
 
+    if (!import.meta.env.VITE_RAZORPAY_KEY_ID) {
+      alert("Error: Razorpay Key ID is missing. Please check Vercel Environment Variables.");
+      return;
+    }
+
     const options = {
       key: import.meta.env.VITE_RAZORPAY_KEY_ID,
       amount: "50000",
