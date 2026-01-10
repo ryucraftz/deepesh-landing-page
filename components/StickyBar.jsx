@@ -1,6 +1,44 @@
 import React from "react";
 
+import useRazorpay from "../src/hooks/useRazorpay";
+
 const StickyBar = () => {
+  const isLoaded = useRazorpay();
+
+  const handlePayment = () => {
+    if (!isLoaded) return;
+
+    const options = {
+      key: import.meta.env.VITE_RAZORPAY_KEY_ID,
+      amount: "50000",
+      currency: "INR",
+      name: "Acme Corp",
+      description: "Test Transaction",
+      image: "https://example.com/your_logo",
+      handler: function (response) {
+        alert(JSON.stringify(response));
+      },
+      prefill: {
+        name: "Piyush Garg",
+        email: "youremail@example.com",
+        contact: "9999999999",
+      },
+      notes: {
+        address: "Razorpay Corporate Office",
+      },
+      theme: {
+        color: "#3399cc",
+      },
+    };
+
+    const rzp1 = new window.Razorpay(options);
+    rzp1.on("payment.failed", function (response) {
+      alert(JSON.stringify(response));
+    });
+
+    rzp1.open();
+  };
+
   return (
     <div className="fixed bottom-0 left-0 w-full bg-white p-4 shadow-lg flex items-center justify-between border-t border-gray-200 lg:px-20 z-[1000] space-x-2 sm:space-x-6">
       {/* Left: Pricing */}
@@ -20,7 +58,11 @@ const StickyBar = () => {
 
       {/* Right: CTA */}
       <div className="flex items-center flex-1 justify-end relative">
-        <button className="bg-red-600 text-white font-semibold text-sm sm:text-base md:text-lg rounded-3xl shadow-lg transition transform px-4 sm:px-6 py-2 sm:py-3 whitespace-normal text-center max-w-[200px] sm:max-w-[300px]">
+        <button
+          onClick={handlePayment}
+          disabled={!isLoaded}
+          className="bg-red-600 text-white font-semibold text-sm sm:text-base md:text-lg rounded-3xl shadow-lg transition transform px-4 sm:px-6 py-2 sm:py-3 whitespace-normal text-center max-w-[200px] sm:max-w-[300px] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed h-full"
+        >
           Book Your 1:1 FitDad Transformation Call
         </button>
       </div>
