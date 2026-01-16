@@ -1,7 +1,6 @@
+// MeetCoachKush.jsx
 import React from "react";
 import { BadgeCheck, Globe2, Users, Timer, Target, Sparkles } from "lucide-react";
-
-import coachImg from "../src/assets/coachprofile2.jpeg";
 
 export default function MeetCoachKush() {
   return (
@@ -29,19 +28,8 @@ export default function MeetCoachKush() {
           {/* LEFT: Photo card */}
           <div className="lg:col-span-5">
             <div className="relative h-full rounded-3xl border border-sky-200 bg-white p-3 sm:p-4 shadow-sm">
-              <div className="relative overflow-hidden rounded-2xl border border-sky-200 bg-sky-50">
-                <div className="aspect-[4/5] sm:aspect-[5/6] lg:aspect-[4/5]">
-                  <img
-                    src={coachImg}
-                    alt="Coach Deepesh"
-                    // ✅ FIX: avoid cutting head by using contain + top alignment
-                    className="h-full w-full object-contain object-top"
-                    loading="lazy"
-                  />
-                </div>
-
-                {/* darker overlay ONLY on the photo */}
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+              <div className="relative overflow-hidden rounded-2xl border border-sky-200 bg-sky-50 h-[400px] flex items-center justify-center bg-slate-100">
+                <p className="text-gray-400 font-semibold">Coach Photo Placeholder</p>
 
                 {/* Top tags */}
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
@@ -60,6 +48,8 @@ export default function MeetCoachKush() {
                   </div>
                 </div>
               </div>
+
+              {/* Removed duplicated tags */}
 
               <div className="mt-4 text-center">
                 <p className="text-lg sm:text-xl font-extrabold text-gray-900">

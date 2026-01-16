@@ -1,96 +1,14 @@
 // VideoSection.jsx
-import React, { useEffect, useState } from "react";
-
-const MEDIA_ID = "02tvm1vsqw";
-const SWATCH =
-  "https://fast.wistia.com/embed/medias/02tvm1vsqw/swatch";
-
-function loadScriptOnce(src, { type } = {}) {
-  return new Promise((resolve, reject) => {
-    const existing = document.querySelector(`script[src="${src}"]`);
-    if (existing) return resolve();
-
-    const s = document.createElement("script");
-    s.src = src;
-    s.async = true;
-    if (type) s.type = type;
-    s.onload = () => resolve();
-    s.onerror = reject;
-    document.head.appendChild(s);
-  });
-}
+import React from "react";
 
 export default function VideoSection() {
-  const [playerDefined, setPlayerDefined] = useState(false);
-
-  useEffect(() => {
-    let mounted = true;
-
-    (async () => {
-      try {
-        await loadScriptOnce("https://fast.wistia.com/player.js");
-        await loadScriptOnce(`https://fast.wistia.com/embed/${MEDIA_ID}.js`, {
-          type: "module",
-        });
-
-        // ✅ Ensures the custom element exists (so it can render)
-        if (window.customElements?.whenDefined) {
-          await window.customElements.whenDefined("wistia-player");
-        }
-
-        if (mounted) setPlayerDefined(true);
-      } catch {
-        // If scripts fail, keep poster overlay visible (better than blank)
-        if (mounted) setPlayerDefined(false);
-      }
-    })();
-
-    return () => {
-      mounted = false;
-    };
-  }, []);
 
   return (
     <section className="bg-white flex flex-col items-center mt-0 md:-mt-48 lg:-mt-64 relative z-10">
-      {/* ✅ Wistia Video with instant poster + smooth transition */}
+      {/* ✅ Wistia Video Placeholder */}
       <div className="w-full max-w-3xl px-2 sm:px-0">
-        <div className="rounded-lg shadow-lg overflow-hidden">
-          {/* Aspect ratio container */}
-          <div
-            className="relative w-full"
-            style={{
-              paddingTop: "56.25%", // 16:9
-              backgroundImage: `url("${SWATCH}")`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundColor: "#0b1220",
-            }}
-          >
-            {/* Poster/Skeleton overlay (visible immediately) */}
-            <div
-              className={`absolute inset-0 transition-opacity duration-500 ${playerDefined ? "opacity-0 pointer-events-none" : "opacity-100"
-                }`}
-            >
-              {/* subtle dark overlay */}
-              <div className="absolute inset-0 bg-black/35" />
-              {/* shimmer */}
-              <div className="absolute inset-0 animate-pulse bg-white/5" />
-              {/* loading pill */}
-              <div className="absolute bottom-3 left-3 rounded-full bg-black/55 px-3 py-1 text-xs text-white">
-                Loading…
-              </div>
-            </div>
-
-            {/* Player fills container (no layout shift) */}
-            <wistia-player
-              class="absolute inset-0 w-full h-full"
-              media-id={MEDIA_ID}
-              aspect="1.7777777777777777"
-              autoplay="true"
-              muted="true"
-              silent-autoplay="true"
-            ></wistia-player>
-          </div>
+        <div className="rounded-lg shadow-lg overflow-hidden bg-slate-900 aspect-video flex items-center justify-center">
+          <p className="text-white text-lg font-semibold">Video Placeholder</p>
         </div>
       </div>
 
