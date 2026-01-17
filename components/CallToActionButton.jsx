@@ -68,7 +68,7 @@ export default function CallToActionButton(props) {
           relative inline-flex w-full sm:max-w-md
           items-center justify-center text-center
           rounded-full bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold tracking-wide
-          shadow-xl shadow-red-600/30 hover:shadow-2xl hover:shadow-red-600/40
+          shadow-[0_0_20px_rgba(220,38,38,0.5)] hover:shadow-[0_0_30px_rgba(220,38,38,0.7)]
           px-8 sm:px-12 py-4 sm:py-5
           text-sm sm:text-base md:text-lg
           whitespace-nowrap
@@ -76,7 +76,7 @@ export default function CallToActionButton(props) {
           max-[380px]:text-[13px] max-[380px]:px-5
           cursor-pointer
           disabled:opacity-50 disabled:cursor-not-allowed
-          border border-transparent hover:border-red-400/50
+          border border-red-500/30 hover:border-red-400/80
         "
         whileHover={{ scale: 1.04 }}
         whileTap={{ scale: 0.96 }}

@@ -4,7 +4,7 @@ import React from "react";
 export default function VideoSection() {
 
   return (
-    <section className="bg-white flex flex-col items-center mt-0 md:-mt-48 lg:-mt-64 relative z-10">
+    <section className="bg-transparent flex flex-col items-center mt-[-10px] sm:mt-[-20px] relative z-20">
       {/* ✅ Wistia Video Placeholder */}
       <div className="w-full max-w-3xl px-2 sm:px-0">
         <div className="rounded-lg shadow-lg overflow-hidden bg-slate-900 aspect-video flex items-center justify-center">
