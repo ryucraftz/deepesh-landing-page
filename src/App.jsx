@@ -5,7 +5,7 @@ import Review from "../components/Review";
 import Hero from "../components/Hero";
 import VideoSection from "../components/VideoSection";
 import CallToActionButton from "../components/CallToActionButton";
-import MeetCoachKush from "../components/MeetCoachKush";
+import MeetCoachDeepesh from "../components/MeetCoachDeepesh";
 import PhotoTestimonials from "../components/PhotoTestimonials";
 // import VideoTestimonialSection from "../components/VideoTestimonialSection"; // Removed as not in request
 import FitDadWhySystemWorks from "../components/FitDadWhySystemWorks";
@@ -38,7 +38,7 @@ function App() {
         </div>
 
         {/* About */}
-        <MeetCoachKush />
+        <MeetCoachDeepesh />
 
         {/* FAQS */}
         <FAQ />

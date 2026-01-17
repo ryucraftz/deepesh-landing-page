@@ -1,9 +1,9 @@
-// MeetCoachKush.jsx
+// MeetCoachDeepesh.jsx
 import React from "react";
 import { BadgeCheck, Globe2, Users, Timer, Target, Sparkles } from "lucide-react";
 import FadeIn from "./FadeIn";
 
-export default function MeetCoachKush() {
+export default function MeetCoachDeepesh() {
   return (
     <section className="relative bg-transparent py-12 sm:py-16 overflow-hidden">
       {/* soft accents */}
