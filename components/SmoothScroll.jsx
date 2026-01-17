@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 export default function SmoothScroll() {
     useEffect(() => {
+        if (!window.Lenis) return; // Safety check
         const lenis = new window.Lenis();
 
         function raf(time) {
