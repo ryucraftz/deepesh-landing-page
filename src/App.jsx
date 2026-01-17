@@ -11,6 +11,7 @@ import PhotoTestimonials from "../components/PhotoTestimonials";
 import FitDadWhySystemWorks from "../components/FitDadWhySystemWorks";
 // import OurPromise from "../components/OurPromise"; // Removed as not in request
 import FAQ from "../components/FAQ";
+import FinalCTA from "../components/FinalCTA";
 import StickyBar from "../components/StickyBar";
 
 function App() {
