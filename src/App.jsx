@@ -13,6 +13,7 @@ import FitDadWhySystemWorks from "../components/FitDadWhySystemWorks";
 import FAQ from "../components/FAQ";
 import FinalCTA from "../components/FinalCTA";
 
+import SmoothScroll from "../components/SmoothScroll";
 import StickyBar from "../components/StickyBar";
 
 function App() {
@@ -20,25 +21,41 @@ function App() {
 
   return (
     <>
+      <SmoothScroll />
       <div className="pb-28 sm:pb-32">
         <Review />
         <Hero />
         {/* VSL */}
         <VideoSection />
 
+        {/* CTA 1 */}
+        <div className="flex justify-center py-6 sm:py-8">
+          <CallToActionButton text="Apply for IRON DAD CLUB™" />
+        </div>
+
         {/* Social Proof */}
         <PhotoTestimonials />
+
+        {/* CTA 2 */}
+        <div className="flex justify-center py-6 sm:py-8">
+          <CallToActionButton text="Book Your Transformation Call" />
+        </div>
 
         {/* What You Will Get */}
         <FitDadWhySystemWorks />
 
-        {/* CTA */}
+        {/* CTA 3 (Existing) */}
         <div className="flex justify-center py-8">
           <CallToActionButton text="Apply for IRON DAD CLUB™" />
         </div>
 
         {/* About */}
         <MeetCoachDeepesh />
+
+        {/* CTA 4 */}
+        <div className="flex justify-center py-6 sm:py-8">
+          <CallToActionButton text="Work with Coach Deepesh" />
+        </div>
 
         {/* FAQS */}
         <FAQ />

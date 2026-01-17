@@ -30,14 +30,11 @@ const StickyBar = () => {
           {/* Left: Pricing */}
           <div className="flex flex-col items-start min-w-0 shrink-0">
             <div className="flex items-baseline gap-1.5 sm:gap-2">
-              <span className="text-slate-400 text-base sm:text-xl font-medium line-through decoration-slate-400 decoration-2">
-                ₹999
-              </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-600 text-xl sm:text-3xl font-black drop-shadow-sm">
                 FREE
               </span>
             </div>
-            <div className="text-[10px] sm:text-sm font-bold text-slate-500 uppercase tracking-wide truncate max-w-[120px] sm:max-w-none">
+            <div className="text-[10px] sm:text-sm font-bold text-red-600 uppercase tracking-wide truncate max-w-[120px] sm:max-w-none">
               Limited-time offer
             </div>
           </div>
