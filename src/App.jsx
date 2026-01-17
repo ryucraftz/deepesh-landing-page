@@ -12,6 +12,7 @@ import FAQ from "../components/FAQ";
 import FinalCTA from "../components/FinalCTA";
 import StickyBar from "../components/StickyBar";
 import ThankYou from "../components/ThankYou";
+import ThankYouStickyBar from "../components/ThankYouStickyBar";
 
 function App() {
   const [isThankYou, setIsThankYou] = useState(false);
@@ -23,7 +24,12 @@ function App() {
   }, []);
 
   if (isThankYou) {
-    return <ThankYou />;
+    return (
+      <>
+        <ThankYou />
+        <ThankYouStickyBar />
+      </>
+    );
   }
 
   return (
