@@ -1,4 +1,3 @@
-// MeetCoachDeepesh.jsx
 import React from "react";
 import { BadgeCheck, Globe2, Users, Timer, Target, Sparkles } from "lucide-react";
 import FadeIn from "./FadeIn";
@@ -13,12 +12,12 @@ export default function MeetCoachDeepesh() {
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         {/* Header */}
         <FadeIn className="text-center max-w-3xl mx-auto">
-          <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white mb-4">
-            Meet Your Coach <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Deepesh</span>
+          <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-slate-900 mb-4">
+            Meet Your Coach <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Deepesh</span>
           </h2>
 
-          <p className="mt-4 text-base sm:text-lg text-slate-400">
-            <span className="font-semibold text-slate-200">
+          <p className="mt-4 text-base sm:text-lg text-slate-600">
+            <span className="font-semibold text-slate-800">
               I work exclusively with working fathers who want to lose fat, regain energy, and feel strong again without sacrificing their family or career.
             </span>
           </p>
@@ -28,18 +27,18 @@ export default function MeetCoachDeepesh() {
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
           {/* LEFT: Photo card */}
           <div className="lg:col-span-5">
-            <FadeIn delay={0.2} className="relative h-full rounded-3xl border border-slate-800 bg-slate-900/60 p-3 sm:p-4 shadow-2xl backdrop-blur-xl">
-              <div className="relative overflow-hidden rounded-2xl border border-slate-700/50 bg-slate-800 h-[400px] flex items-center justify-center">
+            <FadeIn delay={0.2} className="relative h-full rounded-3xl border border-slate-200 bg-white/70 p-3 sm:p-4 shadow-2xl backdrop-blur-xl">
+              <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 h-[400px] flex items-center justify-center">
                 {/* Grid Pattern */}
-                <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
+                <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#00000012_1px,transparent_1px),linear-gradient(to_bottom,#00000012_1px,transparent_1px)] bg-[size:24px_24px]" />
 
-                <p className="text-slate-500 font-medium relative z-10">Coach Photo Placeholder</p>
+                <p className="text-slate-400 font-medium relative z-10">Coach Photo Placeholder</p>
 
                 {/* Top tags */}
-                <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
-                  <div className="inline-flex items-center gap-2 rounded-full bg-black/70 backdrop-blur px-3 py-1.5 border border-white/10 shadow-sm">
-                    <BadgeCheck className="h-4 w-4 text-blue-400" />
-                    <span className="text-xs sm:text-sm font-semibold text-white">
+                <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-10">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1.5 border border-slate-200 shadow-sm">
+                    <BadgeCheck className="h-4 w-4 text-blue-600" />
+                    <span className="text-xs sm:text-sm font-semibold text-slate-800">
                       ISSA Certified Coach
                     </span>
                   </div>
@@ -56,16 +55,16 @@ export default function MeetCoachDeepesh() {
               {/* Removed duplicated tags */}
 
               <div className="mt-4 text-center">
-                <p className="text-lg sm:text-xl font-extrabold text-white">
+                <p className="text-lg sm:text-xl font-extrabold text-slate-900">
                   Deepesh
                 </p>
-                <p className="mt-1 text-sm text-slate-400">
+                <p className="mt-1 text-sm text-slate-500">
                   Fitness Coach &amp; Nutritionist
                 </p>
 
                 {/* stats */}
                 <div className="mt-4">
-                  <div className="grid grid-cols-2 gap-2 rounded-2xl bg-slate-950/50 backdrop-blur border border-white/5 p-3 shadow-inner text-left">
+                  <div className="grid grid-cols-2 gap-2 rounded-2xl bg-slate-50/50 backdrop-blur border border-slate-100 p-3 shadow-inner text-left">
                     <MiniStatOverlay
                       icon={<Users className="h-4 w-4" />}
                       label="1200+ Transformations"
@@ -90,16 +89,16 @@ export default function MeetCoachDeepesh() {
 
           {/* RIGHT: Story + Expertise */}
           <div className="lg:col-span-7">
-            <FadeIn delay={0.4} className="h-full rounded-3xl border border-slate-800 bg-slate-900/60 p-6 sm:p-8 shadow-xl backdrop-blur-xl">
-              <div className="rounded-2xl border border-slate-700/50 bg-slate-800/40 p-4 sm:p-5">
-                <p className="text-sm font-bold tracking-[0.18em] uppercase text-amber-500">
+            <FadeIn delay={0.4} className="h-full rounded-3xl border border-slate-200 bg-white/70 p-6 sm:p-8 shadow-xl backdrop-blur-xl">
+              <div className="rounded-2xl border border-slate-200 bg-white/60 p-4 sm:p-5">
+                <p className="text-sm font-bold tracking-[0.18em] uppercase text-amber-600">
                   The story
                 </p>
 
                 {/* ✅ UPDATED STORY */}
-                <div className="mt-3 space-y-3 text-slate-300 leading-relaxed">
+                <div className="mt-3 space-y-3 text-slate-600 leading-relaxed">
                   <p>
-                    <span className="font-bold text-white">IRON DAD CLUB™</span> exists because most fitness plans
+                    <span className="font-bold text-slate-900">IRON DAD CLUB™</span> exists because most fitness plans
                     are built for young, single people with unlimited time.
                   </p>
 
@@ -111,10 +110,10 @@ export default function MeetCoachDeepesh() {
 
               <div className="mt-7">
                 <div className="flex items-center justify-between gap-3 flex-wrap">
-                  <h4 className="text-sm font-bold tracking-[0.22em] uppercase text-blue-400">
+                  <h4 className="text-sm font-bold tracking-[0.22em] uppercase text-blue-600">
                     Expertise &amp; Experience
                   </h4>
-                  <span className="rounded-full bg-amber-500/10 border border-amber-500/20 px-3 py-1 text-xs font-semibold text-amber-400">
+                  <span className="rounded-full bg-amber-500/10 border border-amber-500/20 px-3 py-1 text-xs font-semibold text-amber-600">
                     Built for working fathers
                   </span>
                 </div>
@@ -128,11 +127,11 @@ export default function MeetCoachDeepesh() {
                 </ul>
               </div>
 
-              <div className="mt-7 rounded-2xl border border-slate-700/50 bg-gradient-to-br from-slate-800 to-slate-900 p-4 shadow-lg">
-                <p className="text-sm sm:text-base font-extrabold text-white">
+              <div className="mt-7 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 shadow-lg">
+                <p className="text-sm sm:text-base font-extrabold text-slate-800">
                   No extremes. No guesswork.
                 </p>
-                <p className="mt-1 text-sm text-slate-400">
+                <p className="mt-1 text-sm text-slate-500">
                   Just a simple system you can follow alongside work + family — and actually sustain.
                 </p>
               </div>
