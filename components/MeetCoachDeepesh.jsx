@@ -146,9 +146,9 @@ export default function MeetCoachDeepesh() {
 
 function MiniStatOverlay({ icon, label }) {
   return (
-    <div className="flex items-center gap-2 rounded-xl border border-white/5 bg-white/5 px-2.5 py-2 hover:bg-white/10 transition-colors">
-      <span className="text-amber-400">{icon}</span>
-      <span className="text-xs font-semibold text-slate-300 leading-snug">
+    <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white/60 px-2.5 py-2 hover:bg-white transition-colors shadow-sm">
+      <span className="text-amber-500">{icon}</span>
+      <span className="text-xs font-semibold text-slate-700 leading-snug">
         {label}
       </span>
     </div>
@@ -157,9 +157,9 @@ function MiniStatOverlay({ icon, label }) {
 
 function Bullet({ children }) {
   return (
-    <li className="flex items-start gap-2 rounded-2xl border border-slate-700/50 bg-slate-800/30 px-3 py-3 hover:border-slate-600 transition-colors">
+    <li className="flex items-start gap-2 rounded-2xl border border-slate-200 bg-white/50 px-3 py-3 hover:border-slate-300 transition-colors">
       <span className="mt-1.5 h-2 w-2 rounded-full bg-blue-500 shrink-0 shadow-[0_0_8px_#3b82f6]" />
-      <span className="text-sm sm:text-base text-slate-300 leading-snug">
+      <span className="text-sm sm:text-base text-slate-700 leading-snug">
         {children}
       </span>
     </li>
