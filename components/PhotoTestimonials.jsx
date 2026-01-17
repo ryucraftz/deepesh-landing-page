@@ -35,9 +35,27 @@ export default function PhotoTestimonials() {
 
         {/* Placeholder for Testimonials */}
         <div className="mt-8 sm:mt-12">
-          <FadeIn delay={0.2} className="rounded-3xl border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-8 shadow-2xl flex items-center justify-center min-h-[200px]">
-            <p className="text-slate-500 font-semibold text-lg italic text-center">
-              Transformation photos of dads who regained their fitness will be shown here.
+          <FadeIn delay={0.2} className="rounded-3xl border border-slate-800 bg-slate-900/40 backdrop-blur-xl p-8 shadow-2xl">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {/* Fake Photo 1 */}
+              <div className="aspect-[4/5] rounded-2xl bg-slate-800 border-2 border-dashed border-slate-700 flex flex-col items-center justify-center p-4">
+                <span className="text-slate-600 font-bold text-4xl mb-2">?</span>
+                <p className="text-slate-500 text-xs text-center font-medium">Transformation #1</p>
+              </div>
+              {/* Fake Photo 2 */}
+              <div className="aspect-[4/5] rounded-2xl bg-slate-800 border-2 border-dashed border-slate-700 flex flex-col items-center justify-center p-4 relative">
+                <span className="absolute -top-3 bg-amber-500 text-black text-[10px] font-bold px-2 py-0.5 rounded-full">AMAZING</span>
+                <span className="text-slate-600 font-bold text-4xl mb-2">?</span>
+                <p className="text-slate-500 text-xs text-center font-medium">Transformation #2</p>
+              </div>
+              {/* Fake Photo 3 */}
+              <div className="hidden sm:flex aspect-[4/5] rounded-2xl bg-slate-800 border-2 border-dashed border-slate-700 flex-col items-center justify-center p-4">
+                <span className="text-slate-600 font-bold text-4xl mb-2">?</span>
+                <p className="text-slate-500 text-xs text-center font-medium">Transformation #3</p>
+              </div>
+            </div>
+            <p className="text-slate-500 font-medium text-sm text-center mt-6 italic">
+              (Live client transformation photos will be uploaded here)
             </p>
           </FadeIn>
 

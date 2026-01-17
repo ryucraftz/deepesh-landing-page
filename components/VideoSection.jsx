@@ -13,11 +13,11 @@ export default function VideoSection() {
       </div>
 
       {/* Text line */}
-      <div className="mt-5 px-4">
-        <div className="inline-flex items-center gap-2 rounded-full border border-sky-400 bg-sky-100 px-4 py-2 shadow-sm">
-          <p className="text-center text-sm sm:text-base font-semibold text-slate-800">
-            Watch how <span className="text-sky-600">busy fathers</span> lose 10–15 kilos of fat while{" "}
-            <span className="text-sky-600">eating normal Indian food</span> and managing work and family life.
+      <div className="mt-5 px-4 w-full flex justify-center">
+        <div className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/60 backdrop-blur-md px-4 py-2 shadow-xl shadow-black/20">
+          <p className="text-center text-sm sm:text-base font-semibold text-slate-300">
+            Watch how <span className="text-blue-400 font-bold">busy fathers</span> lose 10–15 kilos of fat while{" "}
+            <span className="text-amber-400 font-bold">eating normal Indian food</span>.
           </p>
         </div>
       </div>
