@@ -13,6 +13,8 @@ import FinalCTA from "../components/FinalCTA";
 import StickyBar from "../components/StickyBar";
 import ThankYou from "../components/ThankYou";
 import ThankYouStickyBar from "../components/ThankYouStickyBar";
+import Footer from "../components/Footer";
+
 
 function App() {
   const [isThankYou, setIsThankYou] = useState(false);
@@ -27,6 +29,7 @@ function App() {
     return (
       <>
         <ThankYou />
+        <Footer />
         <ThankYouStickyBar />
       </>
     );
@@ -75,6 +78,9 @@ function App() {
 
         {/* Final CTA */}
         <FinalCTA />
+
+        {/* Footer */}
+        <Footer />
       </div>
 
       <StickyBar />
