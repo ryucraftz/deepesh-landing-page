@@ -42,7 +42,7 @@ function App() {
 
         {/* CTA 1 */}
         <div className="flex justify-center py-6 sm:py-8">
-          <CallToActionButton text="Book Your 1:1 FitDad Transformation Call" />
+          <CallToActionButton text="Book Your Strategy Call" />
         </div>
 
         {/* Social Proof */}
@@ -51,7 +51,7 @@ function App() {
 
         {/* CTA 2 */}
         <div className="flex justify-center py-6 sm:py-8">
-          <CallToActionButton text="Book Your 1:1 FitDad Transformation Call" />
+          <CallToActionButton text="Book Your Strategy Call" />
         </div>
 
         {/* What You Will Get */}
@@ -59,7 +59,7 @@ function App() {
 
         {/* CTA 3 (Existing) */}
         <div className="flex justify-center py-8">
-          <CallToActionButton text="Book Your 1:1 FitDad Transformation Call" />
+          <CallToActionButton text="Book Your Strategy Call" />
         </div>
 
         {/* About */}
@@ -67,7 +67,7 @@ function App() {
 
         {/* CTA 4 */}
         <div className="flex justify-center py-6 sm:py-8">
-          <CallToActionButton text="Book Your 1:1 FitDad Transformation Call" />
+          <CallToActionButton text="Book Your Strategy Call" />
         </div>
 
         {/* FAQS */}

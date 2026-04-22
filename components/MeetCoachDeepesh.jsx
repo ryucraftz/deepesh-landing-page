@@ -13,53 +13,51 @@ export default function MeetCoachDeepesh() {
         {/* Header */}
         <FadeIn className="text-center max-w-3xl mx-auto">
           <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-slate-900 mb-4">
-            Meet Your Coach <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Deepesh</span>
+            We Are Not a Generic Agency. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">We Work Inside Your Market.</span>
           </h2>
 
           <p className="mt-4 text-base sm:text-lg text-slate-600">
             <span className="font-semibold text-slate-800">
-              I work exclusively with working fathers who want to lose fat, regain energy, and feel strong again without sacrificing their family or career.
+              We built Brand Buzzar in Vadodara — inside the same industrial belt where most of our clients make their products.
             </span>
           </p>
         </FadeIn>
 
         {/* Main layout */}
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
-          {/* LEFT: Photo card */}
+          {/* LEFT: Identity card */}
           <div className="lg:col-span-5">
             <FadeIn delay={0.2} className="relative h-full rounded-3xl border border-slate-200 bg-white/70 p-3 sm:p-4 shadow-2xl backdrop-blur-xl">
               <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 h-[300px] sm:h-[400px] flex items-center justify-center">
                 {/* Grid Pattern */}
                 <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#00000012_1px,transparent_1px),linear-gradient(to_bottom,#00000012_1px,transparent_1px)] bg-[size:24px_24px]" />
 
-                <p className="text-slate-400 font-medium relative z-10">Coach Photo Placeholder</p>
+                <p className="text-slate-400 font-medium relative z-10 text-center px-6 uppercase tracking-widest font-bold">Brand Buzzar <br />Vadodara</p>
 
                 {/* Top tags */}
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-10">
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1.5 border border-slate-200 shadow-sm">
                     <BadgeCheck className="h-4 w-4 text-blue-600" />
                     <span className="text-xs sm:text-sm font-semibold text-slate-800">
-                      ISSA Certified Coach
+                      Industrial Belt Expertise
                     </span>
                   </div>
 
                   <div className="hidden sm:inline-flex items-center gap-2 rounded-full bg-amber-400 px-3 py-1.5 border border-amber-300 shadow-sm">
                     <Sparkles className="h-4 w-4 text-black" />
                     <span className="text-xs sm:text-sm font-bold text-black">
-                      IRON DAD CLUB™
+                      6 CLIENTS MAX
                     </span>
                   </div>
                 </div>
               </div>
 
-              {/* Removed duplicated tags */}
-
               <div className="mt-4 text-center">
                 <p className="text-lg sm:text-xl font-extrabold text-slate-900">
-                  Deepesh
+                  Based in Vadodara
                 </p>
                 <p className="mt-1 text-sm text-slate-500">
-                  Fitness Coach &amp; Nutritionist
+                  Inside Gujarat's Industrial Belt
                 </p>
 
                 {/* stats */}
@@ -67,19 +65,19 @@ export default function MeetCoachDeepesh() {
                   <div className="grid grid-cols-2 gap-2 rounded-2xl bg-slate-50/50 backdrop-blur border border-slate-100 p-2 sm:p-3 shadow-inner text-left">
                     <MiniStatOverlay
                       icon={<Users className="h-4 w-4" />}
-                      label="1200+ Transformations"
-                    />
-                    <MiniStatOverlay
-                      icon={<Timer className="h-4 w-4" />}
-                      label="8+ Years Coaching"
-                    />
-                    <MiniStatOverlay
-                      icon={<Target className="h-4 w-4" />}
-                      label="Specialised in coaching busy dads"
+                      label="Vadodara-based local team"
                     />
                     <MiniStatOverlay
                       icon={<Globe2 className="h-4 w-4" />}
-                      label="Clients across 8+ countries"
+                      label="International Buyer Leads"
+                    />
+                    <MiniStatOverlay
+                      icon={<Target className="h-4 w-4" />}
+                      label="1:1 Dedicated Account Manager"
+                    />
+                    <MiniStatOverlay
+                      icon={<Timer className="h-4 w-4" />}
+                      label="Maximum 6 clients per quarter"
                     />
                   </div>
                 </div>
@@ -92,18 +90,16 @@ export default function MeetCoachDeepesh() {
             <FadeIn delay={0.4} className="h-full rounded-3xl border border-slate-200 bg-white/70 p-6 sm:p-8 shadow-xl backdrop-blur-xl">
               <div className="rounded-2xl border border-slate-200 bg-white/60 p-4 sm:p-5">
                 <p className="text-sm font-bold tracking-[0.18em] uppercase text-amber-600">
-                  The story
+                  Our measure
                 </p>
 
-                {/* ✅ UPDATED STORY */}
                 <div className="mt-3 space-y-3 text-slate-600 leading-relaxed">
                   <p>
-                    <span className="font-bold text-slate-900">IRON DAD CLUB™</span> exists because most fitness plans
-                    are built for young, single people with unlimited time.
+                    Every agency our clients had tried gave them a traffic report and a ranking update. <span className="font-bold text-slate-900">Nobody gave them buyers.</span>
                   </p>
 
                   <p>
-                    This system is built for fathers with jobs, stress, responsibilities, and real lives.
+                    So we built a process with one measure: <span className="font-bold text-blue-600">how many serious buyers called you this month.</span>
                   </p>
                 </div>
               </div>
@@ -111,28 +107,27 @@ export default function MeetCoachDeepesh() {
               <div className="mt-7">
                 <div className="flex items-center justify-between gap-3 flex-wrap">
                   <h4 className="text-sm font-bold tracking-[0.22em] uppercase text-blue-600">
-                    Expertise &amp; Experience
+                    Why Choose Us?
                   </h4>
                   <span className="rounded-full bg-amber-500/10 border border-amber-500/20 px-3 py-1 text-xs font-semibold text-amber-600">
-                    Built for working fathers
+                    Manufacturers Only
                   </span>
                 </div>
 
                 <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <Bullet>My name is Deepesh</Bullet>
-                  {/* Keeping some existing bullets or simplifying */}
-                  <Bullet>Specialised in coaching working fathers</Bullet>
-                  <Bullet>No crash dieting</Bullet>
-                  <Bullet>No long gym sessions</Bullet>
+                  <Bullet>We understand the factory floor</Bullet>
+                  <Bullet>We understand global buyers</Bullet>
+                  <Bullet>Guaranteed results in writing</Bullet>
+                  <Bullet>Maximum 6 spots per quarter</Bullet>
                 </ul>
               </div>
 
               <div className="mt-7 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 shadow-lg">
                 <p className="text-sm sm:text-base font-extrabold text-slate-800">
-                  No extremes. No guesswork.
+                  We only say yes to success.
                 </p>
                 <p className="mt-1 text-sm text-slate-500">
-                  Just a simple system you can follow alongside work + family — and actually sustain.
+                  If we check your market and buyer demand doesn't exist, we won't take your money.
                 </p>
               </div>
             </FadeIn>

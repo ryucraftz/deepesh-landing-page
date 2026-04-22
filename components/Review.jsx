@@ -32,13 +32,13 @@ const Review = () => {
             />
           </div>
 
-          {/* Text + Animated 400 */}
-          <span className="font-bold tracking-tight text-slate-900">ISSA Certified Coach</span>
+          {/* Text + Animated 50 */}
+          <span className="font-bold tracking-tight text-slate-900">Vadodara Based</span>
 
           <span className="mx-1 sm:mx-2 text-slate-300">|</span>
 
           <span className="font-medium">
-            <span className="font-bold text-amber-600"><AnimatedNumber value={400} /></span> Transformations
+            <span className="font-bold text-amber-600"><AnimatedNumber value={50} /></span> Manufacturers Helped
           </span>
         </div>
       </div>

@@ -21,51 +21,59 @@ export default function PhotoTestimonials({ hideHeader = false }) {
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-slate-900 mb-6">
-              Trusted by <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">working fathers</span>
+              These Manufacturers Were Stuck on <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Exhibitions and IndiaMART.</span>
               <br />
-              who were <span className="text-slate-500">tired, overweight, and inconsistent</span>
+              Just <span className="text-slate-500">Like You.</span>
             </h2>
 
             <p className="mt-6 text-lg sm:text-xl font-medium text-slate-600 leading-relaxed max-w-3xl mx-auto">
-              and <span className="text-amber-600 font-bold">lost significant fat, regained energy, and built strength</span>{" "}
-              <span className="hidden sm:inline"> </span>
-              without crash dieting or long gym sessions.
+              and <span className="text-amber-600 font-bold">delivered serious buyers from Australia and Kuwait</span>{" "}
+              within 60 days of launching on Google.
             </p>
           </FadeIn>
         )}
 
-        {/* Placeholder for Testimonials */}
+        {/* Results Grid */}
         <div className="mt-8 sm:mt-12">
           <FadeIn delay={0.2} className="rounded-3xl border border-slate-200 bg-white/40 backdrop-blur-xl p-5 sm:p-8 shadow-2xl">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-              {/* Fake Photo 1 */}
-              <div className="aspect-[4/5] rounded-2xl bg-white border-2 border-dashed border-slate-200 flex flex-col items-center justify-center p-4">
-                <span className="text-slate-300 font-bold text-4xl mb-2">?</span>
-                <p className="text-slate-400 text-xs text-center font-medium">Transformation #1</p>
+              {/* Result 1 */}
+              <div className="rounded-2xl bg-white border border-slate-100 p-6 shadow-sm">
+                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Vadodara</p>
+                <h4 className="font-bold text-slate-900 mb-3 text-lg">EV Components</h4>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  <span className="font-bold text-slate-800">Before:</span> Two exhibitions a year. No buyers otherwise.<br />
+                  <span className="font-bold text-blue-600">After:</span> Kuwait buyer found them on Google within 60 days. Continuing relationship.
+                </p>
               </div>
-              {/* Fake Photo 2 */}
-              <div className="aspect-[4/5] rounded-2xl bg-white border-2 border-dashed border-slate-200 flex flex-col items-center justify-center p-4 relative">
-                <span className="absolute -top-3 bg-amber-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-full ring-1 ring-amber-400">AMAZING</span>
-                <span className="text-slate-300 font-bold text-4xl mb-2">?</span>
-                <p className="text-slate-400 text-xs text-center font-medium">Transformation #2</p>
+              {/* Result 2 */}
+              <div className="rounded-2xl bg-white border border-slate-100 p-6 shadow-sm relative">
+                <span className="absolute -top-3 bg-amber-400 text-black text-[10px] font-bold px-2 py-0.5 rounded-full ring-1 ring-amber-400">GLOBAL EXPORT</span>
+                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Rajkot</p>
+                <h4 className="font-bold text-slate-900 mb-3 text-lg">Industrial Equipment</h4>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  <span className="font-bold text-slate-800">Before:</span> Spent ₹4 lakh on one exhibition. 3 business cards.<br />
+                  <span className="font-bold text-blue-600">After:</span> Buyers from Australia now reach them directly on WhatsApp.
+                </p>
               </div>
-              {/* Fake Photo 3 */}
-              <div className="hidden sm:flex aspect-[4/5] rounded-2xl bg-white border-2 border-dashed border-slate-200 flex-col items-center justify-center p-4">
-                <span className="text-slate-300 font-bold text-4xl mb-2">?</span>
-                <p className="text-slate-400 text-xs text-center font-medium">Transformation #3</p>
+              {/* Result 3 */}
+              <div className="rounded-2xl bg-white border border-slate-100 p-6 shadow-sm">
+                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Surat</p>
+                <h4 className="font-bold text-slate-900 mb-3 text-lg">Solar Systems</h4>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  <span className="font-bold text-slate-800">Before:</span> IndiaMART bargaining below cost every day.<br />
+                  <span className="font-bold text-blue-600">After:</span> 3 to 5 high-budget buyers per month who place real orders.
+                </p>
               </div>
             </div>
-            <p className="text-slate-500 font-medium text-sm text-center mt-6 italic">
-              (Live client transformation photos will be uploaded here)
-            </p>
           </FadeIn>
 
           <FadeIn delay={0.3} className="mt-6 rounded-3xl border border-slate-200 bg-white/70 backdrop-blur-xl p-4 sm:p-6 shadow-xl text-center">
             <p className="text-sm sm:text-base font-semibold text-slate-800">
-              You’re not “too late.”
+              The buyers exist. They are searching.
               <span className="text-amber-600 block sm:inline">
                 {" "}
-                You just need a system built for real life.
+                They are just not finding you. That is the only problem.
               </span>
             </p>
           </FadeIn>

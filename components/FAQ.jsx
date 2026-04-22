@@ -6,20 +6,28 @@ import FadeIn from "./FadeIn";
 export default function FAQ() {
   const faqs = [
     {
-      question: "Will this work if I’ve failed before?",
-      answer: "Yes. Most fathers fail because plans don’t fit real life. This one does.",
+      question: "Will this work for my product?",
+      answer: "If buyers search Google for products in your category — and they do — this works. Before we take you on we check whether that buyer demand actually exists for what you make.",
     },
     {
-      question: "Do I need to give up roti, rice, or Indian food?",
-      answer: "No. The system is designed around normal Indian meals.",
+      question: "I tried a digital marketing agency before and got nothing. How is this different?",
+      answer: "Most agencies track traffic and rankings. We track one thing: how many serious buyers called you this month. We also back it with a guarantee in writing.",
     },
     {
-      question: "How much time will this take daily?",
-      answer: "20–30 minutes of training, plus simple daily habits.",
+      question: "How much of my time does this need?",
+      answer: "One 30-minute call per week in the first month. Less after that. Your job is to tell us about your product and reply to the buyers who start calling.",
     },
     {
-      question: "What if I have health issues like BP or diabetes?",
-      answer: "The program is adjusted safely based on your condition.",
+      question: "What if 90 days pass and we still have not gotten buyers?",
+      answer: "We keep working at no extra cost until you do. That is the guarantee, in writing. We only take on manufacturers where we are confident the result is achievable.",
+    },
+    {
+      question: "Why only 6 manufacturers per quarter?",
+      answer: "Every client gets one person from our team working their account from day one. Six is the number that lets us deliver quality results reliably.",
+    },
+    {
+      question: "We already have IndiaMART. Do we need to stop?",
+      answer: "No. Keep it running. Most manufacturers find that within 6 months the quality of buyers from Google is far higher and they reduce IndiaMART on their own.",
     },
   ];
 

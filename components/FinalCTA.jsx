@@ -11,19 +11,19 @@ export default function FinalCTA() {
             <div className="max-w-4xl mx-auto text-center relative z-10">
                 <FadeIn>
                     <h2 className="text-slate-900 text-2xl sm:text-4xl md:text-5xl font-extrabold mb-8 leading-tight">
-                        You don’t need another short burst of motivation.{" "}
+                        You Make a Good Product.{" "}
                         <br className="hidden sm:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">You need a system that fits your life as a father.</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">Serious Buyers Should Be Finding You.</span>
                     </h2>
                     <p className="text-slate-600 text-lg sm:text-xl mb-10 leading-relaxed">
-                        If you’re ready to lose belly fat, regain energy,{" "}
+                        Right now they are searching. They are calling whoever shows up.{" "}
                         <br className="hidden sm:block" />
-                        and become a stronger role model for your kids,{" "}
+                        One conversation can change whether that is you or your competitor.{" "}
                         <br className="hidden sm:block" />
-                        apply for IRON DAD CLUB™.
+                        Book Your Strategy Call.
                     </p>
                     <div className="flex justify-center">
-                        <CallToActionButton text="Apply Now" />
+                        <CallToActionButton text="Book Your Strategy Call" />
                     </div>
                 </FadeIn>
             </div>

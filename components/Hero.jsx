@@ -23,7 +23,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="font-extrabold leading-tight tracking-tight mx-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 mb-6 drop-shadow-sm px-2 sm:px-0"
         >
-          Lose post-30 belly fat and <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">feel fit, strong, and energetic again</span> as a father
+          Attention Manufacturers and Exporters in India: <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600">Your Next Big Order Is Already Going to a Competitor.</span>
         </motion.h1>
 
         {/* Subheading */}
@@ -33,9 +33,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="my-6 text-lg sm:text-xl md:text-2xl font-medium text-slate-600 leading-relaxed max-w-3xl mx-auto"
         >
-          Built for <span className="font-bold text-slate-900">working fathers</span> who want real fat loss and strength{" "}
-          <span className="hidden sm:inline"> </span>
-          without crash dieting, long workouts, or giving up family meals.
+          Right now a buyer in <span className="font-bold text-slate-900">Dubai, Australia, or India</span> is searching Google for your product. He will call whoever shows up first. <span className="text-slate-900 font-bold">We make sure they find you. Not your competitor.</span>
         </motion.h2>
       </motion.div>
     </div>

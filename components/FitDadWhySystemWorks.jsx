@@ -3,39 +3,39 @@ import React, { useEffect, useRef, useState } from "react";
 import FadeIn from "./FadeIn";
 
 const DEFAULT_DATA = {
-  headingTop: "WHAT YOU WILL GET",
-  headingBottom: "",
-  sub1: "Everything you need to lose fat and build strength without disrupting your life.",
-  sub2: "",
-  listTitle: "Inside the IRON DAD CLUB™, You Get:",
+  headingTop: "YOUR PRODUCT IS GOOD.",
+  headingBottom: "BUYERS JUST CANNOT FIND YOU.",
+  sub1: "Serious buyers are searching for what you make right now. If they don't find you, they call your competitor.",
+  sub2: "This is not a product problem. It is a visibility problem. And it is solvable.",
+  listTitle: "Why Traditional Methods Are Failing You:",
   items: [
     {
-      title: "Complete Dad-Specific Assessment",
-      desc: "So YOU get a plan built around your body, schedule, and stress",
+      title: "The Exhibition Trap",
+      desc: "Spending ₹2L-10L to come home with business cards that go nowhere.",
     },
     {
-      title: "Indian Fat Loss Nutrition Plan",
-      desc: "So YOU lose belly fat while eating with your family",
+      title: "The IndiaMART Race to the Bottom",
+      desc: "Being placed next to 200 competitors where the only value is 'cheapest price'.",
     },
     {
-      title: "20–30 Minute Home Workouts",
-      desc: "So YOU stay consistent without exhausting your day",
+      title: "The Dubai/Australia Gap",
+      desc: "Serious international buyers aren't on IndiaMART; they are searching Google and ChatGPT.",
     },
     {
-      title: "Weekly 1:1 Coaching",
-      desc: "So YOUR plan adapts as life changes",
+      title: "Dependency on Old Contacts",
+      desc: "Referrals hit a ceiling. You need a predictable flow of new global inquiries.",
     },
     {
-      title: "Daily Accountability & Support",
-      desc: "So YOU don’t fall off track during busy weeks",
+      title: "Zero Ownership",
+      desc: "When the exhibition ends, the leads stop. You own nothing from the spend.",
     },
     {
-      title: "Travel, Festival & Eating-Out Strategies",
-      desc: "So fat loss continues even during real-life situations",
+      title: "The 'Invisible' Manufacturer",
+      desc: "If your name doesn't appear when they search, you simply don't exist to them.",
     },
   ],
   footer:
-    "Built for fathers with jobs, stress, responsibilities, and real lives.",
+    "We help manufacturers in Gujarat's industrial belt stop being invisible and start getting calls.",
 };
 
 function DotIcon() {
